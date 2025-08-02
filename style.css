@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* BLUE BOX */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: lightblue;
+  position: relative;
+  top: 100px; /* space below navbar */
+  left: 50px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* PINK BOX */
+.inner-box {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+
+  /* Transition and hover effect */
+  transition: transform 0.3s ease;
+}
+
+/* HOVER ANIMATION */
+.inner-box:hover {
+  transform: scale(1.2) rotate(10deg);
+}
